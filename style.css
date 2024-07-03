@@ -1,117 +1,67 @@
-body {
-    font-family: 'Roboto Mono',monospace;
-    background-image: url('https://cdn.discordapp.com/attachments/468228661418524673/823877228315541544/unknown.png');
-    background-color: #000000;
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:22px;
+  }
+  li{
+    list-style:none;
+  }
+  html {
+    height: 100%;
+    background: white;
+    background: radial-gradient(circle, #fff 24%, #CCE);
     background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
   }
-  
-  .container {
+  #container{
+    width: 290px;
     text-align: center;
-    padding: 20px;
-    height: 100vh;
+    height:auto;
+    margin:4px auto;
   }
-  
-  .page-title {
-    color: #ffffff;
-    margin: 0 0 5px;
+  #calculadora{
+    width: 234px;
+    height: 230px;
+    margin:0 auto;
+    padding:2px;
+    background-color: #65D277;
   }
-  
-  .page-subtitle {
-    color: #ffffff;
-    margin-top: 5px;
+  .input-valor{
+    margin:8px auto;
+    width:95%;
+    height:30px;
+    font-size: 16px;
+    overflow:hidden;
+    text-align: right;
+    color:#48484D;
+    padding: 4px;
+    background-color:#fff;
+    box-shadow: inset -1px -1px 4px 1px #eee;
   }
-  
-  .page-logo {
-    width: 200px;
+  .key li{
+    width:50px;
+    height:30px;
+    border-radius:3px;
+    color:#fff;
+    background-color:#6C73FA;
+    cursor:pointer;
+    float:left;
+    margin: 0px -3px 5px 8px;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 0px 3px 1px 0px #444651;
   }
-  
-  .alura-logo {
-    width: 40px;
-    position: absolute;
-    top: 10px;
-    right:10px;
+  .key li:hover{
+    background-color: #BEF9F0;
+    color: #6C73FA;
+    transition:0.2s;
   }
-
-  *:focus {
-    outline: 0 !important;
+  .key li:active{
+    box-shadow: 0px 1px 1px 0px #444651;
   }
-
-
-.espaçamento {
-  margin: 0 auto;
-  height:40px;
-}
-
-.calculadora {
-  margin: 0 auto;
-  width: 294px;
-  background-color: black;
-  border: 1px solid #ddd;
-}
-
-.tela {
-  width: 279px;
-  border: 0;
-  border-radius: 1px;
-  height: 60px;
-  padding-right: 15px;
-  padding-top: 10px;
-  background-color: #202020;
-  text-align: right;
-  margin-right: 6px;
-  font-size: 2.5rem;
-  color: white;
-  overflow-x: auto;
-  transition: all .2s ease-in-out;
-}
-
-.contas div {
-  color: white;
-  display: inline-block;
-  border: 0;
-  border-radius: 1px;
-  width: 40px;
-  text-align: center;
-  padding: 10px;
-  margin: 20px 4px 10px 0;
-  cursor: pointer;
-  background-color: #202020;
-  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
-}
-
-.painel-numeros {
-  display: inline-block;
-}
-
-.numeros div {
-  color: white;
-  display: inline-block;
-  border: 0;
-  border-radius: 1px;
-  width: 40px;
-  text-align: center;
-  padding: 10px;
-  margin: 10px 4px 10px 0;
-  cursor: pointer;
-  background-color: #202020;
-  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
-}
-
-.igual {
-  display: inline-block;
-  border: 0;
-  border-radius: 1px;
-  width: 40px;
-  text-align: center;
-  padding: 102px 10px;
-  margin: 10px 6px 10px 0;
-  vertical-align: top;
-  cursor: pointer;
-  color: #FFF;
-  background-color: #202020;
-  transition: all .2s ease-in-out;
-}
+  .verificar{
+    width: 93.4% !important;
+  }
 
 
